@@ -1,6 +1,6 @@
-DENSIGN_NAME2="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
+DESIGN_NAME2="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
 
-for dd in $DENSIGN_NAME2
+for dd in $DESIGN_NAME2
 do
     GRID_CLB_SIZE_X=250
     GRID_CLB_SIZE_Y=260
