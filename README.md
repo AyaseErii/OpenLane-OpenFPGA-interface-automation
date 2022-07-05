@@ -5,7 +5,7 @@ This is a file-transferring from OpenFPGA to OpenLane, and an OpenLane design fl
 * Lastes OpenFPGA and OpenLane. Please make sure both tools are installed without any error.
 
 ## How to run
-1. Make sure you generated a 2x2 FPGA fabric with OpenFPGA, i.e. you need to have `latest/your_design/.../SRC` directory containing `lb`, `routing` and `submodule` 3 sub-directory and `fpga_top.v` after running your task
+1. Make sure you generated a 2x2 FPGA fabric with OpenFPGA, i.e. you need to have `latest/your_design/.../SRC` directory containing `lb`, `routing` and `submodule` 3 sub-directories and `fpga_top.v` after running your task
 2. Set the path `FPGA_SRC_PATH` in `run_copy_fpga_fabric.sh` to set the path of source files of you generated FPGA fabric
 3. Run `run_flow.sh` and wait the entire flow
 
