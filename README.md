@@ -15,4 +15,4 @@ This is a file-transferring from OpenFPGA to OpenLane, and an OpenLane design fl
 
 * For a relatively large design, e.g. a 8x8 FPGA fabric. Remember to change the `DESIGN_NAME2` and `DESIGN_DESIGN`, e.g. change `sb_0__2_` to `sb_0__8_`. PLEASE change all the `2` of the elements in the both `DESIGN_NAME2` list and `DESIGN_DESIGN` list
 
-* Make sure `runs` directory of each design/marco/block contains only one submodule. If there are multiple, please leave the latest one.
+* Make sure `runs` directory of each design/marco/block contains only one subdirectory. If there are multiple, please leave the latest one.
