@@ -19,3 +19,7 @@ cp -r ./designs/fpga_core/gds/*.gds ./$DIR
 cp -r ./designs/fpga_core/lef/*.lef ./$DIR
 cp -r ./designs/fpga_core/src/fpga_core.v ./$DIR
 cp -r ./designs/fpga_core/config.tcl ./$DIR/fpga_core_config.tcl
+
+cd ..
+cp -r ./FPGA-Placement-Generator/*.py ./OpenLane/$DIR
+cd OpenLane/$DIR/
