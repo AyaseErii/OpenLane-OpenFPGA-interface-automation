@@ -8,7 +8,8 @@ mkdir src
 cd ../..
 
 DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
-FPGA_SRC_PATH="OpenFPGA/openfpga_flow/tasks/basic_tests/generate_fabric/latest/vpr_arch/and2/MIN_ROUTE_CHAN_WIDTH/SRC"
+read -p 'Input FPGA_SRC_PATH' FPGA_SRC_PATH
+# FPGA_SRC_PATH="OpenFPGA/openfpga_flow/tasks/basic_tests/generate_fabric/latest/vpr_arch/and2/MIN_ROUTE_CHAN_WIDTH/SRC"
 
 for d in $DESIGN_DEISGN
 do
