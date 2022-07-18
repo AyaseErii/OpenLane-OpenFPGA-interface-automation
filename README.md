@@ -7,8 +7,9 @@ This is a file-transferring from OpenFPGA to OpenLane, and an OpenLane design fl
 ## How to run
 1. Make sure you generated a 2x2 FPGA fabric with OpenFPGA, i.e. you need to have `latest/your_design/.../SRC` directory containing `lb`, `routing` and `submodule` 3 sub-directories and `fpga_top.v` after running your task.
 2. `git clone` the repo under `OpenLane` directory.
-3. Set the path `FPGA_SRC_PATH` in `run_copy_fpga_fabric.sh` to set the path of source files of you generated FPGA fabric.
-4. Run `run_flow.sh` and wait the entire flow.
+3. Set the path `FPGA_SRC_PATH` in `run_copy_fpga_fabric.sh` to set the path of source files of you generated FPGA fabric. 
+4. Run `run_copy_fpga_fabric.sh`.
+5. Run `run_flow.sh` and wait the entire flow.
 
 ### IMPORTANT NOTE
 * In `run_flow.sh`, users can set absolute die area, such as `GRID_CLB_SIZE_X`, `GRID_CLB_SIZE_Y`, `CB_SIZE_X`, `CB_SIZE_Y`, `SB_SIZE_X` and `SB_SIZE_Y` ,for each small macro/block
