@@ -7,9 +7,14 @@ mkdir lef
 mkdir src
 cd ../..
 
-DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
-read -p 'Input FPGA_SRC_PATH' FPGA_SRC_PATH
-# FPGA_SRC_PATH="OpenFPGA/openfpga_flow/tasks/basic_tests/generate_fabric/latest/vpr_arch/and2/MIN_ROUTE_CHAN_WIDTH/SRC"
+#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
+DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__3_ cby_0__1_ cby_1__1_ cby_3__1_ sb_0__0_ sb_0__1_ sb_0__3_ sb_1__0_ sb_1__1_ sb_1__3_ sb_3__0_ sb_3__1_ sb_3__3_ grid_clb"
+#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__4_ cby_0__1_ cby_1__1_ cby_4__1_ sb_0__0_ sb_0__1_ sb_0__4_ sb_1__0_ sb_1__1_ sb_1__4_ sb_4__0_ sb_4__1_ sb_4__4_ grid_clb"
+#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__6_ cby_0__1_ cby_1__1_ cby_6__1_ sb_0__0_ sb_0__1_ sb_0__6_ sb_1__0_ sb_1__1_ sb_1__6_ sb_6__0_ sb_6__1_ sb_6__6_ grid_clb"
+#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__8_ cby_0__1_ cby_1__1_ cby_8__1_ sb_0__0_ sb_0__1_ sb_0__8_ sb_1__0_ sb_1__1_ sb_1__8_ sb_8__0_ sb_8__1_ sb_8__8_ grid_clb"
+
+
+FPGA_SRC_PATH="OpenFPGA/openfpga_flow/tasks/basic_tests/generate_fabric/latest/vpr_arch/and2/MIN_ROUTE_CHAN_WIDTH/SRC"
 
 for d in $DESIGN_DEISGN
 do
@@ -98,6 +103,7 @@ do
     #using these if you are building cb or sb
 
 done
+cp -r ../$FPGA_SRC_PATH/fpga_top.v ./designs/fpga_core/src/fpga_core.v
 echo " "
 echo "Finish copying! "
 echo " "
