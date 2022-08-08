@@ -8,8 +8,8 @@ mkdir src
 cd ../..
 
 #DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_ sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_ grid_clb"
-DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__3_ cby_0__1_ cby_1__1_ cby_3__1_ sb_0__0_ sb_0__1_ sb_0__3_ sb_1__0_ sb_1__1_ sb_1__3_ sb_3__0_ sb_3__1_ sb_3__3_ grid_clb"
-#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__4_ cby_0__1_ cby_1__1_ cby_4__1_ sb_0__0_ sb_0__1_ sb_0__4_ sb_1__0_ sb_1__1_ sb_1__4_ sb_4__0_ sb_4__1_ sb_4__4_ grid_clb"
+#DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__3_ cby_0__1_ cby_1__1_ cby_3__1_ sb_0__0_ sb_0__1_ sb_0__3_ sb_1__0_ sb_1__1_ sb_1__3_ sb_3__0_ sb_3__1_ sb_3__3_ grid_clb"
+DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__4_ cby_0__1_ cby_1__1_ cby_4__1_ sb_0__0_ sb_0__1_ sb_0__4_ sb_1__0_ sb_1__1_ sb_1__4_ sb_4__0_ sb_4__1_ sb_4__4_ grid_clb"
 #DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__6_ cby_0__1_ cby_1__1_ cby_6__1_ sb_0__0_ sb_0__1_ sb_0__6_ sb_1__0_ sb_1__1_ sb_1__6_ sb_6__0_ sb_6__1_ sb_6__6_ grid_clb"
 #DESIGN_DEISGN="cbx_1__0_ cbx_1__1_ cbx_1__8_ cby_0__1_ cby_1__1_ cby_8__1_ sb_0__0_ sb_0__1_ sb_0__8_ sb_1__0_ sb_1__1_ sb_1__8_ sb_8__0_ sb_8__1_ sb_8__8_ grid_clb"
 
@@ -31,7 +31,7 @@ do
         cp -r ../../../../${FPGA_SRC_PATH}/lb/*.v ./
         #cp -r ../../../../SOFA/FPGA1212_SOFA_HD_PNR/FPGA1212_SOFA_HD_Verilog/SRC/sub_module {digital_io_hd}.v        
         cd sub_module
-        rm -rf {arch_encoder,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
+        rm -rf {arch_encoder,local_encoder,mux_primitives,shift_register_banks,user_project_wrapper}.v
         #rm -rf {digital_io_hd,arch_encoder,luts,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
         cd ..
         rm -rf {grid_io_bottom_bottom,grid_io_left_left,grid_io_right_right,grid_io_top_top,logical_tile_io_mode_io_,logical_tile_io_mode_physical__iopad}.v
@@ -47,7 +47,7 @@ do
         cp -r ../../../../${FPGA_SRC_PATH}/sub_module ./
         cp -r ../../../../${FPGA_SRC_PATH}/routing/$d.v ./
         cd sub_module
-        rm -rf {arch_encoder,luts,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
+        rm -rf {arch_encoder,luts,local_encoder,mux_primitives,shift_register_banks,user_project_wrapper}.v
         #rm -rf {digital_io_hd,arch_encoder,luts,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
         cd ..
 
@@ -65,7 +65,7 @@ do
         cp -r ../../../../${FPGA_SRC_PATH}/lb/{logical_tile_io_mode_io_,logical_tile_io_mode_physical__iopad}.v ./
         #cp -r ../../../../SOFA/FPGA1212_SOFA_HD_PNR/FPGA1212_SOFA_HD_Verilog/SRC/sub_module {digital_io_hd}.v
         cd sub_module
-        rm -rf {arch_encoder,luts,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
+        rm -rf {arch_encoder,luts,local_encoder,mux_primitives,shift_register_banks,user_project_wrapper}.v
         #rm -rf {digital_io_hd,arch_encoder,luts,local_encoder,mux_primitives,fpga_top,user_project_wrapper}.v
         cd ..
 
